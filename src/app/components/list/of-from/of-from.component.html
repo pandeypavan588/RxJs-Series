@@ -1,0 +1,67 @@
+<div class="my-3">
+    <h2>Of and From</h2>
+    <hr>
+    <strong>Ex. 01 (OF)</strong>
+    <h5>Converts the arguments to an observable sequence.</h5>
+
+    <div class="row">
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong> of('Pavan','Jack',"john")
+            </p>
+            <hr>
+            <ul id="listContainer"></ul>
+        </div>
+
+        <div class="col-md-6">
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong> of(&#123;'Pavan','Jack',"john"&#125;)
+            </p>
+            <hr>
+            <ul>
+                <li>{{obsMessage.a}}</li>
+                <li>{{obsMessage.b}}</li>
+                <li>{{obsMessage.c}}</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <hr>
+    <strong>Ex. 02 (From)</strong>
+    <h5>Creates an Observable from an Array, an array-like object, a Promise, an iterable object, or an Observable-like object.</h5>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h6>Note: Convering Array to Observable using FROM opearator</h6>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong> from(['banana','mango','apple'])
+            </p>
+            <hr>
+            <ul id="fromConatiner"></ul>
+        </div>
+
+        <div class="col-md-4">
+            <h6>Note: Convering Promise to Observable using FROM opearator</h6>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong> Promise to Observable
+            </p>
+            <p>Promise will be converted to Observable in 3 second</p>
+
+            <hr>
+            <h4>{{fpMesg}}</h4>
+        </div>
+
+        <div class="col-md-4">
+            <h6>Note: Convering String to Observable using FROM opearator</h6>
+            <hr>
+            <p class="bg-light py-2 px-3 border rounded">
+                <strong>Data:</strong>'Welcome to rxjs tutorial'
+            </p>
+            <hr>
+            <ul id="fromStrConatiner"></ul>
+        </div>
+    </div>
+</div>
